@@ -1,0 +1,138 @@
+/* html style */
+
+html {scroll-behavior: smooth;}
+
+/* html style end */
+
+
+
+/* Body Style */
+
+body {background-image: url(images/Kingdom\ Hearts\ tile\ 2.jpg);
+background-repeat: repeat;
+}
+
+
+
+/* Body Style End */
+
+/* Nav Style */
+
+
+.navbar {font-family: 'KingdomHearts';}
+
+.navbar .navbar-brand {font-size: 50px;}
+
+.navbar .nav-link {font-size: 40px;}
+
+.bg-transparentBlack {background-color: rgba(44, 43, 43, 0.767);}
+
+nav {top: 0;
+z-index:99;}
+
+/* Nav Style end */
+
+
+/* Jumbotron Style */
+
+.jumbotron {background-image: url(images/KH3\ medium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'KingdomHearts';}
+
+.jumbotron .display-1 {font-size: 70px;
+color: darkgoldenrod;}
+
+.jumbotron .lead {font-family: 'CenturyGothic';
+background-color: rgba(119, 136, 153, 0.562);
+padding-left: 10px;}
+
+
+
+
+/* Jumbotron Style ends */
+
+
+.media {background-color: rgba(73, 115, 194, 0.589);
+color: white;
+padding-top: 5px;
+padding-bottom: 10px;
+padding-left: 10px;
+}
+
+
+
+.media .mt-0 {font-family: 'KingdomHearts';
+font-size: 40px;}
+.media .mb-2 {font-family: 'CenturyGothic';}
+
+.media .mb-0 {font-family: 'CenturyGothic';}
+
+.media .mb-3 {font-family: 'CenturyGothic';
+margin-top: 10px;}
+
+/* Carousel Style */
+
+.carousel {margin-top: 20px;
+    margin-bottom: 20px;}
+
+.carouselTittleKH {font-family: 'KingdomHearts';
+font-size: 60px;
+color:slategrey;}
+
+.carouselTittleKH2 {font-family: 'KingdomHearts';
+    font-size: 60px;
+    color:lightgrey;}
+    
+.carouselTittleKH3 {font-family: 'KingdomHearts';
+    font-size: 60px;
+    color:lightsteelblue;}
+
+.carouselText {font-family: 'CenturyGothic';
+background-color: rgba(128, 128, 128, 0.479);
+margin-left: 5px;}
+        
+/* Carousel Style ends */
+
+/* Cards Button Collapse Style */
+
+.btn-card1 {background-color: silver;}
+
+.btn-card2 {background-color: tomato;}
+
+.btn-card3 {background-color: skyblue;
+color: white;}
+
+.btn-card4 {background-color: darkmagenta;
+color:white;}
+
+/* Cards Button Collapse Style end */
+
+
+/* Footer Style */
+
+
+.footer {background-image: url(images/Kingdom\ Hearts\ Background\ tablet.jpg);}
+
+.footer p {text-align: center;
+          color: white;
+          padding-top: 1.5%;
+          padding-bottom: 1.5%;
+          margin-bottom: 0;
+        font-family: 'CenturyGothic';}
+
+/* Footer Style end */
+
+/* Special Font Family */
+
+@font-face {
+    font-family: 'KingdomHearts';
+    src: url(fonts/Kingdom_Hearts_Font.ttf);}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(fonts/Century_Gothic.ttf);
+}
+
+/* Special Font Family End */
