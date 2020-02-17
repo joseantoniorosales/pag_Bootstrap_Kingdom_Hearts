@@ -15,10 +15,16 @@
     <title>Kingdom Hearts: The Story so Far</title>
 </head>
 
-<body onload="sonar('DearlyBeloved')">
+<body onload="sound('DearlyBeloved')">
 
     <audio id="DearlyBeloved" loop>
         <source src="sounds/Dearly Beloved DDD.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="Select">
+
+        <source src="sounds/KH Select.mp3" type="audio/mpeg">
+
     </audio>
 
     <!-- Navbar Start-->
@@ -32,24 +38,24 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link text-info" href="#">Home <span class="sr-only">(current)</span></a>
+
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#Story">Story</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-danger" href="#">Story</a>
+                    <a class="nav-link text-secondary" href="#Trilogy" tabindex="-1" aria-disabled="true">Trilogy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#" tabindex="-1" aria-disabled="true">Trilogy</a>
+                    <a class="nav-link text-success" href="#SpinOffs" tabindex="-1" aria-disabled="true">SpinOffs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#" tabindex="-1" aria-disabled="true">SpinOffs</a>
+                    <a class="nav-link text-light" href="#Development" tabindex="-1"
+                        aria-disabled="true">Development</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">Development</a>
+                    <a class="nav-link text-info" href="#Footer" tabindex="-1" aria-disabled="true">Footer</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-primary" href="#" tabindex="-1" aria-disabled="true">Opinion</a>
-                </li>
+
             </ul>
         </div>
     </nav>
@@ -59,8 +65,8 @@
     <!-- Jumbotron Start -->
 
     <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-1">May your Heart be your Guiding Key, young keyblade wielder</h1>
+        <div class="container-fluid">
+            <h1 class="display-1">May Your Heart Be Your Guiding Key, Young Keyblade Wielder</h1>
             <p class="lead">Welcome to Kingdom Hearts, a fantasy universe home of both characters from
                 Final Fantasy and Disney. Join our heroes Sora, Donald and Goofy in their adventure in order to finish
                 once and for all with the darkness using the legendary power of the Keyblade</p>
@@ -72,9 +78,9 @@
     <div class="media">
         <img src="images/Artema2.png" height="150" class="align-self-center mr-3" alt="...">
         <div class="media-body">
-            <h5 class="mt-0">Origins</h5>
+            <h5 class="mt-0" id="Story">Origins</h5>
             <p class="mb-2">The idea of combining Disney characters with the Final Fantasy atmosphere ocurred while
-                SquareSoft and Disney's headquarter where shared by the two companies. </p>
+                SquareSoft and Disney's headquarter were shared by the two companies. </p>
             <p class="mb-0">One day, Tetsuya Nomura (director and character designer of the game) and an important
                 employee of Disney were discussing about this idea. It took a while to be accepted but, after a few
                 rejections, Kingdom Hearts was born.</p>
@@ -112,7 +118,7 @@
         <div class="media-body">
             <h5 class="mt-0">Story II</h5>
             <p class="mb-2">After the plans of Xehanort were frustated, he ends up possesing Terra's bodies and dividing
-                himself into a heartless (Ansem the Seeker of Darkness) and Xemnas.</p>
+                himself into a heartless (Ansem the Seeker of Darkness) and a Nobody (Xemnas).</p>
             <p class="mb-0"> 10 years of peace has passed, and we start to follow Sora, a young teenager that spends his
                 days playing with is friends Riku and Kairi in the Destiny Islands, until one day the darkness destroys
                 his world. Suddenly, a voice start talking to him and gives him the right to wield the legendary
@@ -120,7 +126,7 @@
                 always rely on the wikis.</p>
             <p class="mb-3">If you continue through this website you will find a carousel with a short summary of the
                 plot of the trilogy of Xehanort, followed by some cards with the different spin-offs that makes the
-                story that confusing.</p>
+                story that confusing, but are necesary to understand the majority of the Story.</p>
         </div>
     </div>
 
@@ -141,7 +147,7 @@
 
         <!--First Carousel Image -->
 
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="Trilogy">
             <div class="carousel-item active">
                 <img src="images/Kingdom Hearts I wallpaper.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -198,7 +204,7 @@
 
     <!-- Cards start -->
 
-    <div class="row row-cols-1 row-cols-md-2">
+    <div class="row row-cols-1 row-cols-md-2" id="SpinOffs">
         <div class="col mb-4">
             <div class="card">
                 <img src="images/Kingdom Hearts Chain of Memories wallpaper.jpg" class="card-img-top" alt="...">
@@ -212,7 +218,8 @@
                     <p>
 
                         <button class="btn btn-card1" type="button" data-toggle="collapse"
-                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                            onclick="sound('Select')">
                             Show more Info
                         </button>
                     </p>
@@ -247,7 +254,8 @@
                     <p>
 
                         <button class="btn btn-card2" type="button" data-toggle="collapse"
-                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                            onclick="sound('Select')">
                             Show more Info
                         </button>
                     </p>
@@ -284,7 +292,8 @@
                     <p>
 
                         <button class="btn btn-card3" type="button" data-toggle="collapse"
-                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                            onclick="sound('Select')">
                             Show more Info
                         </button>
                     </p>
@@ -316,7 +325,8 @@
                     <p>
 
                         <button class="btn btn-card4" type="button" data-toggle="collapse"
-                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                            onclick="sound('Select')">
                             Show more Info
                         </button>
                     </p>
@@ -345,18 +355,68 @@
     <!-- Cards end -->
 
 
+    <!-- Media Object 2 start -->
 
+    <!-- First Media Object start -->
+
+    <div class="media">
+        <div class="media-body">
+            <h5 class="mt-0 mb-1" id="Development">Development</h5>
+            <p class="mb-2">The games normally have been developed normally in 1-3 years, but with Kingdom Hearts III It
+                took almost 12 years to finish It (This happened because there were some problems between Disney and
+                Pixar to get the rights of some of their movies for the game), but the rest of them were released
+                normally in the mid-term.
+
+        </div>
+        <img src="images/Nobody Symbol.png" height="150" class="ml-3" alt="...">
+    </div>
+
+
+
+
+    <!-- First Media Object end-->
+
+    <!-- Second Media Object start -->
+
+    <div class="media">
+        <img src="images/Dream Eater Symbol.png" height="150" class="align-self-center mr-3" alt="...">
+        <div class="media-body">
+            <h5 class="mt-0">Opinion</h5>
+            <p class="mb-3">Kingdom Hearts is a franchise that has set the standar of the modern action-RPG games and
+                has grown bigger and bigger since the first installment of the franchise was release, firstly for Disney
+                and later for Its incredible combat system, a combination of real time action and the commands of
+                classic final fantasy games.</p>
+            <p class="mb-0">For me, Kingdom Hearts II is my favourite game of all times because of his extremely
+                fast-paced combat system and the execution of all the scenery. As a quick summary, Kingdom Hearts is a
+                Disney story with darker elements and one of the most addictive combat system RPGs ever made. If you
+                want to know what I mean, check the videos below.</p>
+        </div>
+    </div>
+
+
+    <!-- Second Media Object end -->
+
+    <!-- Media Object 2 end -->
+
+
+    <!-- Embed start-->
+
+      <!-- Embed end -->
 
     <!-- Footer start -->
 
 
-    <footer class="footer">
+    <footer class="footer" id="Footer">
 
-        <p>Pagina creada por José Antonio Rosales Girón</p>
+        <p>website made by José Antonio Rosales Girón</p>
 
         <p>IES Campanillas</p>
 
-        <p></p>
+        <p>Special font: https://www.dafont.com/es/kingdom-hearts.font</p>
+
+        <p>All the images used are owned by Square Enix and Disney</p>
+
+        <p>The song 'Dearly Beloved' belongs to Square Enix and Yoko Shimomura</p>
     </footer>
 
 

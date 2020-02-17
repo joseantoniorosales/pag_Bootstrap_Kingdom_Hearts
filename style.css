@@ -35,14 +35,20 @@ z-index:99;}
 
 /* Jumbotron Style */
 
-.jumbotron {background-image: url(images/KH3\ medium.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+
+
+.jumbotron {background-image: url(images/Kingdom\ Hearts\ tile\ 2\ logo2.jpg);
+    background-size: contain;
+    background-repeat: repeat;
     color: white;
     font-family: 'KingdomHearts';}
 
 .jumbotron .display-1 {font-size: 70px;
-color: darkgoldenrod;}
+color: rgb(255, 183, 0);
+background-color: rgba(119, 136, 153, 0.281);
+padding-left: 10px;
+margin-bottom: 50px;}
 
 .jumbotron .lead {font-family: 'CenturyGothic';
 background-color: rgba(119, 136, 153, 0.562);
@@ -97,9 +103,11 @@ margin-left: 5px;}
 
 /* Cards Button Collapse Style */
 
-.btn-card1 {background-color: silver;}
+.btn-card1 {background-color: silver;
+color: white;}
 
-.btn-card2 {background-color: tomato;}
+.btn-card2 {background-color: tomato;
+color: white;}
 
 .btn-card3 {background-color: skyblue;
 color: white;}
@@ -113,14 +121,15 @@ color:white;}
 /* Footer Style */
 
 
-.footer {background-image: url(images/Kingdom\ Hearts\ Background\ tablet.jpg);}
+.footer {background-image: url(images/Kingdom\ Hearts\ Background\ tablet.jpg);
+margin-top: 20px;}
 
 .footer p {text-align: center;
           color: white;
           padding-top: 1.5%;
           padding-bottom: 1.5%;
           margin-bottom: 0;
-        font-family: 'CenturyGothic';}
+          font-family: 'CenturyGothic';}
 
 /* Footer Style end */
 
@@ -136,3 +145,10 @@ color:white;}
 }
 
 /* Special Font Family End */
+
+
+/* Media Query start */
+
+
+
+/* Media Query end */
