@@ -10,15 +10,18 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <link href="images/Nobody sigil.ico" rel="icon">
     <script src="javascript.js"></script>
+
+    <link href="images/Nobody sigil.ico" rel="icon">
+
     <title>Kingdom Hearts: The Story so Far</title>
 </head>
 
 <body onload="sound('DearlyBeloved')">
 
-    <audio id="DearlyBeloved" loop>
+    <audio autoplay id="DearlyBeloved" loop>
         <source src="sounds/Dearly Beloved DDD.mp3" type="audio/mpeg">
+        <source src="sounds/Dearly Beloved DDD.ogg" type="audio/mpeg">
     </audio>
 
     <audio id="Select">
@@ -27,10 +30,19 @@
 
     </audio>
 
+    <audio id="OpenMenu">
+        <source src="sounds/Open Menu KH.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="CloseMenu">
+        <source src="sounds/Close Menu KH.mp3" type="audio/mpeg">
+    </audio>
+
     <!-- Navbar Start-->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparentBlack position-sticky">
-        <a class="navbar-brand text-warning" href="#"><img src="images/Heart Crown.png" height="55"> Kingdom Hearts</a>
+        <a class="navbar-brand text-warning" href="#" onclick="sound('CloseMenu')"><img src="images/Heart Crown.png"
+                height="55"> Kingdom Hearts</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,20 +52,31 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link text-danger" href="#Story">Story</a>
+                    <a class="nav-link text-danger" href="#Story" onclick="sound('OpenMenu')">Story</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#Trilogy" tabindex="-1" aria-disabled="true">Trilogy</a>
+                    <a class="nav-link text-secondary" href="#Trilogy" tabindex="-1" aria-disabled="true"
+                        onclick="sound('OpenMenu')">Trilogy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#SpinOffs" tabindex="-1" aria-disabled="true">SpinOffs</a>
+                    <a class="nav-link text-success" href="#SpinOffs" tabindex="-1" aria-disabled="true"
+                        onclick="sound('OpenMenu')">SpinOffs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#Development" tabindex="-1"
-                        aria-disabled="true">Development</a>
+                    <a class="nav-link text-light" href="#Development" tabindex="-1" aria-disabled="true"
+                        onclick="sound('OpenMenu')">Development</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-info" href="#Footer" tabindex="-1" aria-disabled="true">Footer</a>
+                    <a class="nav-link text-primary" href="#Videos" tabindex="-1" aria-disabled="true"
+                        onclick="sound('OpenMenu')">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#formu" tabindex="-1" aria-disabled="true"
+                        onclick="sound('OpenMenu')">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="#Footer" tabindex="-1" aria-disabled="true"
+                        onclick="sound('OpenMenu')">Footer</a>
                 </li>
 
             </ul>
@@ -66,7 +89,7 @@
 
     <div class="jumbotron">
         <div class="container-fluid">
-            <h1 class="display-1">May Your Heart Be Your Guiding Key, Young Keyblade Wielder</h1>
+            <h1 class="display-1">May Your Heart Be Your Guiding Key Young Keyblade Wielder</h1>
             <p class="lead">Welcome to Kingdom Hearts, a fantasy universe home of both characters from
                 Final Fantasy and Disney. Join our heroes Sora, Donald and Goofy in their adventure in order to finish
                 once and for all with the darkness using the legendary power of the Keyblade</p>
@@ -107,11 +130,9 @@
         <img src="images/Unverse symbol.png" height="150" class="ml-3" alt="...">
     </div>
 
-
     <!-- Second Media Object End -->
 
     <!-- Third Media Object start -->
-
 
     <div class="media">
         <img src="images/Heartless icon.png" height="150" class="align-self-center mr-3" alt="...">
@@ -201,7 +222,6 @@
 
     <!-- Carousel end -->
 
-
     <!-- Cards start -->
 
     <div class="row row-cols-1 row-cols-md-2" id="SpinOffs">
@@ -216,26 +236,22 @@
                     <!--Collapse Button start -->
 
                     <p>
-
                         <button class="btn btn-card1" type="button" data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                            onclick="sound('Select')">
+                            onclick="sound('Select')" style="font-family:'CenturyGothic'">
                             Show more Info
                         </button>
                     </p>
                     <div class="collapse" id="collapseExample">
                         <div class="card card-body">
                             <p class="card-text" style="font-family: 'CenturyGothic';">Between the events of Kingdom
-                                Hearts and
-                                Its sequel, Sora, Donald and Goofy
-                                enters a strange castle in their search for Riku and Mickey and they end up fighting
-                                with some
-                                members of the Organization XIII and losing their memories along the way</p>
+                                Hearts and Its sequel, Sora, Donald and Goofy enters a strange castle in their search
+                                for Riku and Mickey and they end up fighting with some strange black hooded people that
+                                claimed to be the Organization XIII, while losing their memories along the way</p>
                         </div>
                     </div>
 
                     <!-- Collapse Button ends-->
-
 
                 </div>
             </div>
@@ -245,23 +261,22 @@
                 <img src="images/Kingdom Hearts 358 2 days wallpaper.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"
-                        style="font-family: 'KingdomHearts'; font-size: 40px; color: tomato; margin-bottom: 25px; margin-top: 95px;">
+                        style="font-family: 'KingdomHearts'; font-size: 40px; color: tomato; margin-bottom: 20px; margin-top: 95px;">
                         Kingdom Hearts 358 / 2
                         Days</h5>
 
                     <!-- Collapse Button start -->
 
                     <p>
-
                         <button class="btn btn-card2" type="button" data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                            onclick="sound('Select')">
+                            onclick="sound('Select')" style="font-family: 'CenturyGothic';">
                             Show more Info
                         </button>
                     </p>
                     <div class="collapse" id="collapseExample">
                         <div class="card card-body">
-                            <p class="card-text" style="font-family: 'CenturyGothic'; margin-bottom: 25px;">Almost at
+                            <p class="card-text" style="font-family: 'CenturyGothic'; margin-bottom: 50px;">Almost at
                                 the same time Sora enters the
                                 Castle Oblivion, Roxas wakes up and
                                 joins the Organization XIII. What he didn't know where their true objectives and how
@@ -269,8 +284,6 @@
                                 were...</p>
                         </div>
                     </div>
-
-
 
                     <!-- Collapse Button end -->
 
@@ -285,15 +298,13 @@
                         Hearts Birth
                         by Sleep</h5>
 
-
                     <!-- Collapse Button start -->
-
 
                     <p>
 
                         <button class="btn btn-card3" type="button" data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                            onclick="sound('Select')">
+                            onclick="sound('Select')" style="font-family:'CenturyGothic'">
                             Show more Info
                         </button>
                     </p>
@@ -326,7 +337,7 @@
 
                         <button class="btn btn-card4" type="button" data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
-                            onclick="sound('Select')">
+                            onclick="sound('Select')" style="font-family:'CenturyGothic'">
                             Show more Info
                         </button>
                     </p>
@@ -350,10 +361,7 @@
         </div>
     </div>
 
-
-
     <!-- Cards end -->
-
 
     <!-- Media Object 2 start -->
 
@@ -370,9 +378,6 @@
         </div>
         <img src="images/Nobody Symbol.png" height="150" class="ml-3" alt="...">
     </div>
-
-
-
 
     <!-- First Media Object end-->
 
@@ -393,21 +398,147 @@
         </div>
     </div>
 
-
     <!-- Second Media Object end -->
 
     <!-- Media Object 2 end -->
 
-
     <!-- Embed start-->
 
-      <!-- Embed end -->
+
+    <!-- Card Video 1 start -->
+
+    <div class="card-group" id="Videos">
+        <div class="card" style="background-color: black; color: white;">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e1VUkKIY-v0"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-warning">Lingering Will pro legal</h5>
+                <p class="card-text">Here we can see a gamer that has mastered the combat system destroying the hardest
+                    boss
+                    in the game.</p>
+            </div>
+        </div>
+
+        <!-- Card Video 1 end -->
+
+        <!-- Card Video 2 start -->
+
+        <div class="card" style="background-color: black; color: white;">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/40LGgNB0pbs"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-danger">Lingering Will abuse neg combo</h5>
+                <p class="card-text">Here we can see how the system can be broken... and just abuse the hardest boss.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card Video 2 end -->
+
+        <!-- Card Video 3 start -->
+
+        <div class="card" style="background-color: black; color: white;">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vUY2tS5l380"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-secondary">Average player vs Lingering Will</h5>
+                <p class="card-text">Here we can see an spanish fan of the franchise trying to beat Lingering Will. Has
+                    you
+                    can see here, It truly is the hardest boss in the game. (Long video,watch some tries or just go to
+                    2:08)</p>
+            </div>
+        </div>
+
+        <!-- Card Video 3 end -->
+
+        <!-- Card Video 4 start -->
+
+        <div class="card" style="background-color: black; color: white;">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1m-WBxJhDm4"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-info">Kingdom Hearts II Combo showcase</h5>
+                <p class="card-text">Here we can see the different combos and the satisfaction of mastering this combat
+                    system.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Video 4 end -->
+
+    <!-- Embed end -->
+
+    <!-- Form start -->
+
+
+    <form action="mailto:joseant.rosales@iescampanillas.com">
+
+        <div class="formu" id="formu">
+            <p class="formu-text">Fill the form if you want to hear the news in this website</p>
+            
+            <div class="row">
+                <div class="col">
+                    <input type="text" required class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" required class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Email">
+                <small id="emailHelp" class="form-text text-light" style="font-family: 'CenturyGothic';">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1"></label>
+                <input type="password" required class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1"></label>
+                <input type="password" required class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState"></label>
+                <select id="inputState" class="form-control">
+                  <option selected>news</option>
+                  <option>updates</option>
+                </select>
+              </div>
+            <div class="form-check">
+                <input class="form-check-input" required type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2"
+                    style="font-family: 'CenturyGothic'; color: white; margin-left: 10px;">
+                    Agree to terms and conditions
+                </label>
+                <p></p>
+
+                
+
+                <button type="submit" class="btn btn-primary"
+                    style="margin-bottom: 10px; margin-left: 5px; font-family: 'KingdomHearts'; font-size: 25px;">Submit</button>
+                    
+            </div>
+    </form>
+
+    <!-- Form end -->
 
     <!-- Footer start -->
 
 
     <footer class="footer" id="Footer">
-
         <p>website made by José Antonio Rosales Girón</p>
 
         <p>IES Campanillas</p>
@@ -417,8 +548,13 @@
         <p>All the images used are owned by Square Enix and Disney</p>
 
         <p>The song 'Dearly Beloved' belongs to Square Enix and Yoko Shimomura</p>
-    </footer>
 
+        <p id="Media">social media:
+            <p>github: https://github.com/joseantoniorosales</p>
+            <p>instagram: https://www.instagram.com/joseant999/?hl=es</p>
+            <p>twitter: https://twitter.com/JoseAnt_999</p>
+        </p>
+    </footer>
 
     <!-- Footer end -->
 
@@ -435,8 +571,6 @@
         crossorigin="anonymous"></script>
 
     <!-- scripts Bootstrap end -->
-
-
 
 </body>
 

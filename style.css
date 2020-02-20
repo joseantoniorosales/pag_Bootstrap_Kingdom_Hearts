@@ -35,24 +35,24 @@ z-index:99;}
 
 /* Jumbotron Style */
 
-
-
-
 .jumbotron {background-image: url(images/Kingdom\ Hearts\ tile\ 2\ logo2.jpg);
     background-size: contain;
     background-repeat: repeat;
     color: white;
-    font-family: 'KingdomHearts';}
+    font-family: 'KingdomHearts';
+}
 
-.jumbotron .display-1 {font-size: 70px;
-color: rgb(255, 183, 0);
-background-color: rgba(119, 136, 153, 0.281);
+.jumbotron .display-1 {font-size: 72px;
+color: silver;
+background-color: rgba(119, 136, 153, 0.096);
 padding-left: 10px;
-margin-bottom: 50px;}
+margin-top: 20px;
+margin-bottom: 70px;}
 
 .jumbotron .lead {font-family: 'CenturyGothic';
 background-color: rgba(119, 136, 153, 0.562);
-padding-left: 10px;}
+padding-left: 10px;
+}
 
 
 
@@ -77,6 +77,8 @@ font-size: 40px;}
 
 .media .mb-3 {font-family: 'CenturyGothic';
 margin-top: 10px;}
+
+
 
 /* Carousel Style */
 
@@ -117,12 +119,38 @@ color:white;}
 
 /* Cards Button Collapse Style end */
 
+.card {margin-top: 10px;
+}
+
+.card-title {font-family: 'KingdomHearts';
+font-size: 30px;}
+
+
+.card-text {font-family: 'CenturyGothic';}
+
+/* Form style start */
+
+
+
+.formu {background-color: rgba(73, 115, 194, 0.589);
+margin-top: 10px;
+margin-left: 10px;
+margin-bottom: 10px;}
+
+.formu-text {color: white;
+font-family: 'KingdomHearts';
+font-size: 30px;
+margin-left: 5px;}
+
+.form-control {font-family: 'CenturyGothic';}
+
+/* Form style ends */
 
 /* Footer Style */
 
 
 .footer {background-image: url(images/Kingdom\ Hearts\ Background\ tablet.jpg);
-margin-top: 20px;}
+margin-top: 30px;}
 
 .footer p {text-align: center;
           color: white;
